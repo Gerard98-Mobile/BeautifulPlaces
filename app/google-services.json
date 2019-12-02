@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "146617717772",
+    "firebase_url": "https://beautifulplaces-1570448099979.firebaseio.com",
+    "project_id": "beautifulplaces-1570448099979",
+    "storage_bucket": "beautifulplaces-1570448099979.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146617717772:android:37913dd69a319645e58a29",
+        "android_client_info": {
+          "package_name": "com.example.beautifulplaces"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146617717772-rj1kvdkgb03of290rr30op00i3861nqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuZaZ6LLfBuhblndS_jMkzlUGm8dl6xsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146617717772-rj1kvdkgb03of290rr30op00i3861nqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146617717772:android:4c178e2cb98bb5b9e58a29",
+        "android_client_info": {
+          "package_name": "com.example.testlocalization"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146617717772-rj1kvdkgb03of290rr30op00i3861nqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuZaZ6LLfBuhblndS_jMkzlUGm8dl6xsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146617717772-rj1kvdkgb03of290rr30op00i3861nqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

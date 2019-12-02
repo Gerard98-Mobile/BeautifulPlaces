@@ -1,0 +1,6 @@
+
+ƒsquid:S1149Å"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(€à˜°úÿÿÿÿ8×†ğë-
+fsquid:HiddenFieldCheck§"7Rename "ref" which hides the field declared at line 55.(ñƒÌÙùÿÿÿÿ8áÒÄë-
+nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(×úùÿÿÿÿ8ÊÈ¼÷ë-
+usquid:UselessImportCheck"ERemove this unused import 'com.google.android.gms.maps.model.LatLng'.(Ï˜Éıüÿÿÿÿ8ÿ¡·ñë-
+Lsquid:S1604©"(Make this anonymous inner class a lambda(áåüªúÿÿÿÿ8áÒÄë-

@@ -1,0 +1,12 @@
+
+isquid:CommentedOutCodeLineQ"<This block of commented-out lines of code should be removed.(˜¤ÔÅ8¥²¾Äë-
+hsquid:UselessImportCheck"=Remove this unused import 'androidx.core.app.ActivityCompat'.(þ¤—²8·ê«Áë-
+hsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(òåÈX8ë»“ì-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òžýÿÿÿÿ8¦½»Äë-
+msquid:HiddenFieldCheck7"?Rename "mapFragment" which hides the field declared at line 38.(÷ë°¾ùÿÿÿÿ8“šƒãê-
+]squid:UselessImportCheck"-Remove this unused import 'android.Manifest'.(¦øïŽúÿÿÿÿ8·ê«Áë-
+[squid:UselessImportCheck!"1Remove this unused import 'java.util.LinkedList'.(»Äð18ŽÂÄë-
+Esquid:S1604L"(Make this anonymous inner class a lambda(ÙÂ¹o8žµÖóê-
+ssquid:UselessImportCheck"CRemove this unused import 'androidx.fragment.app.FragmentActivity'.(Êñô–úÿÿÿÿ8“šƒãê-
+}squid:UselessImportCheck"MRemove this unused import 'com.google.android.gms.maps.model.CameraPosition'.(åµ­êýÿÿÿÿ8¿×Äðë-
+]squid:UselessImportCheck"2Remove this unused import 'android.app.ActionBar'.(Åêñª8¨Ó–¿ë-

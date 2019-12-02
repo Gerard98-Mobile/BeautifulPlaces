@@ -1,0 +1,33 @@
+
+Ysquid:S1068Z";Remove this unused "locationSettingsRequest" private field.(°––ı8ÒÌÑøë-
+{squid:S1450Y"^Remove the "locationRequest" field and declare it as a local variable in the relevant methods.(¢¢ B8²‰Öùë-
+qsquid:UselessImportCheck1"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8”óÖ ë-
+Gsquid:S1604ú"(Make this anonymous inner class a lambda(ÎŸÜÜ8İ¤¶–ì-
+Wsquid:S1068M"4Remove this unused "currentPhotoPath" private field.(€Óêüşÿÿÿÿ8ÉóĞøë-
+dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8ôÁÏ–ì-
+hsquid:UselessImportCheck"=Remove this unused import 'android.location.LocationManager'.(Ü©ÎÎ8ğ¶©ùë-
+usquid:UselessImportCheck4"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8”óÖ ë-
+Isquid:S2201ñ"*The return value of "equals" must be used.(á±Şà8İ¤¶–ì-
+Fsquid:S1604€"(Make this anonymous inner class a lambda(‹Ô”H8İ¤¶–ì-
+ksquid:UselessImportCheck
+";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8½Ô„Åë-
+Zsquid:S1068\"7Remove this unused "fusedLocationClient" private field.(®¿é‚ıÿÿÿÿ8ßÿÓøë-
+wsquid:UselessImportCheck2"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8”óÖ ë-
+isquid:UselessImportCheck">Remove this unused import 'android.location.LocationListener'.(æ‡ë 8Ç‡Üøë-
+]squid:UselessImportCheck"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8´òĞÅë-
+esquid:UselessImportCheck":Remove this unused import 'android.content.ContentValues'.(å’µŞ8¸×¸¿ë-
+Hsquid:S2201ğ"*The return value of "equals" must be used.(ëÑû8•È©ùë-
+vsquid:UselessImportCheck$"FRemove this unused import 'androidx.fragment.app.FragmentTransaction'.(¦İÚ¿şÿÿÿÿ8„«ö–ì-
+|squid:UselessImportCheck5"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8”óÖ ë-
+^squid:UselessImportCheck	"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8½Ô„Åë-
+psquid:UselessImportCheck!"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8´òĞÅë-
+^squid:UselessImportCheck?".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ğöÃìê-
+hsquid:UselessImportCheck "=Remove this unused import 'androidx.core.app.ActivityCompat'.(ş¤—²8´òĞÅë-
+„squid:S1450Z"fRemove the "locationSettingsRequest" field and declare it as a local variable in the relevant methods.(°––ı8²‰Öùë-
+usquid:UselessImportCheck3"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8”óÖ ë-
+Ysquid:UselessImportCheck".Remove this unused import 'android.view.Menu'.(£¯Ò…8ôÁÏ–ì-
+‚squid:S1450M"_Remove the "currentPhotoPath" field and declare it as a local variable in the relevant methods.(€Óêüşÿÿÿÿ8ÉóĞøë-
+osquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(ğëğÆûÿÿÿÿ8İ¤¶–ì-
+asquid:UselessImportCheck"6Remove this unused import 'android.view.MenuInflater'.(¥ñ´Ò8ôÁÏ–ì-
+osquid:CommentedOutCodeLine¹"<This block of commented-out lines of code should be removed.(ëèáìúÿÿÿÿ8İ¤¶–ì-
+Zsquid:UselessImportCheck@"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ğöÃìê-

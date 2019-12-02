@@ -1,0 +1,25 @@
+
+zsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8ˆÖÕêê-
+‚squid:UselessImportCheck	"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8ˆÖÕêê-
+wsquid:UselessImportCheck"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8ß—ìê-
+zsquid:UselessImportCheck"ORemove this unused import 'com.google.firebase.firestore.core.FirestoreClient'.(…¬ÈÈ8¹€Ãìê-
+usquid:UselessImportCheck"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8ß—ìê-
+Zsquid:UselessImportCheck!"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8»¨“ğê-
+Msquid:S1068'"*Remove this unused "userID" private field.(³ ûÁÿÿÿÿÿ8Ğ¥«ğê-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8»¨“ğê-
+usquid:UselessImportCheck"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8ß—ìê-
+isquid:UselessImportCheck">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8Ä¾“óê-
+ksquid:UselessImportCheck"@Remove this unused import 'com.google.firestore.v1.WriteResult'.( ¢”8û†Êìê-
+Ksquid:S1604S"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8†û¤öê-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8ıíÕêê-
+Jsquid:S16025",Remove useless curly braces around statement(‚‹¥«8İÁóê-
+Ksquid:S1604B"(Make this anonymous inner class a lambda(ŸÏÒëüÿÿÿÿ8ºıá ë-
+Fsquid:S1604N"(Make this anonymous inner class a lambda(’Åı8†û¤öê-
+xsquid:UselessImportCheck"HRemove this unused import 'com.google.firebase.firestore.QuerySnapshot'.(Ä¡Ş©ıÿÿÿÿ8Ä¾“óê-
+|squid:UselessImportCheck"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8ß—ìê-
+wsquid:UselessImportCheck"LRemove this unused import 'com.google.firebase.firestore.DocumentReference'.(«Ë8äËØõê-
+qsquid:UselessImportCheck"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8ß—ìê-
+Zsquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8àÀÀëê-
+nsquid:UselessImportCheck"CRemove this unused import 'com.google.firebase.firestore.GeoPoint'.(­É¬‘8»¨“ğê-
+esquid:HiddenFieldCheckL"7Rename "ref" which hides the field declared at line 42.(ÆùÓÏüÿÿÿÿ8†û¤öê-
+psquid:UselessImportCheck"@Remove this unused import 'com.google.firebase.firestore.Query'.(ß´Ìıÿÿÿÿ8Ä¾“óê-

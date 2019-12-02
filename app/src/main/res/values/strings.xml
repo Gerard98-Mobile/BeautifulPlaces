@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BeautifulPlaces</string>
+    <string name="confirm">Confirm</string>
+    <string name="eMail">E-Mail</string>
+    <string name="logIn">Log In</string>
+    <string name="registration">No account yet? Create one</string>
+    <string name="signOut">Sign Out</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    
+    <string name="menu_home">home</string>
+    <string name="menu_camera">camera</string>
+    <string name="menu_settings">settings</string>
+
+    <string name="save">Save</string>
+    <string name="mineImage">Image</string>
+    <string name="location">Location</string>
+
+    <string name="image_content">Image</string>
+    <string name="text_name_content">Name</string>
+    <string name="text_id_content">ID</string>
+    <string name="delete_button_content">Delete</string>
+
+
+    <string name="deleting_picture_alert">Do you want to delete that picture?</string>
+    <string name="localization_permission_denied_title">Localization Permission</string>
+    <string name="localization_permission_denied_message">You have to allow using a localization to correctly use this function\nDo you want to accept permission?</string>
+
+    <string name="name_image_autofill_hint">Whats a nice view</string>
+    <string name="name_image_hint">Name your image!</string>
+
+    <string name="see_image">Do you want to see this image?</string>
+    <string name="show_on_map">Show on map</string>
+
+    <string name="problem_with_loading_point">There is problem with loading location point!</string>
+
+    <string name="log_in_exception_google">There was problem with siging in!\nInstall the latest version of Google Play Services!</string>
+    <string name="location_problem">There is problem with getting your location!\nCheck your location connect!</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add">Add</string>
+</resources>

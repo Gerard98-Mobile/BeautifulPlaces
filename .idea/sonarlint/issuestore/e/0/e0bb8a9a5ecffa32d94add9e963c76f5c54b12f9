@@ -1,0 +1,10 @@
+
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Êìí·ÿÿÿÿÿ8ï£¿Óê-
+vsquid:S1450"XRemove the "showOnMap" field and declare it as a local variable in the relevant methods.(—ÇËñ8ÿ¶Ýðë-
+Ksquid:S1604D"(Make this anonymous inner class a lambda(áåüªúÿÿÿÿ8çÛÆñë-
+asquid:UselessImportCheck
+"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ÿìÅñë-
+usquid:UselessImportCheck"ERemove this unused import 'com.google.android.gms.maps.model.LatLng'.(Ï˜Éýüÿÿÿÿ8¢¼äðë-
+vsquid:S1450!"XRemove the "longitude" field and declare it as a local variable in the relevant methods.(®Á–ƒ8‘«Èñë-
+zsquid:S1450 "WRemove the "latitude" field and declare it as a local variable in the relevant methods.(Ù…‚ùÿÿÿÿ8‘«Èñë-
+esquid:UselessImportCheck"5Remove this unused import 'android.view.MotionEvent'.(˜šËÞúÿÿÿÿ8¾Á¼¿ë-
