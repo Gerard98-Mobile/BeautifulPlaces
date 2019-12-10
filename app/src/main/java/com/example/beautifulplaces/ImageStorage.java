@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -61,13 +62,18 @@ public class ImageStorage {
     }
 
 
-    public void insertNewImage(MineImage image){
+    public void insertNewImage(MineImage image, Context context){
 
         ref.add(image).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 deleteImageFile(image.getPath());
 
+            }
+        }).addOnCanceledListener(new OnCanceledListener() {
+            @Override
+            public void onCanceled() {
+                deleteImageFile(image.getPath());
             }
         });
     }

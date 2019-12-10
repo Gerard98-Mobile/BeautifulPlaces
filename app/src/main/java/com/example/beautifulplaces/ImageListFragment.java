@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,10 +25,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
@@ -59,10 +59,9 @@ public class ImageListFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this.getContext());
-        if(acct != null){
-            setUpRecyclerView(view, acct.getId());
+        FirebaseUser user = UserData.getUser();
+        if(user != null){
+            setUpRecyclerView(view, user.getUid());
         }
         return view;
 
@@ -158,30 +157,48 @@ public class ImageListFragment extends Fragment {
 
         @Override
         protected void onBindViewHolder(ImageHolder imageHolder, int i, MineImage image) {
-            imageHolder.date.setText(image.getDate());
-            imageHolder.path = image.getPath();
-            imageHolder.pointOnMap = image.getLocation();
-            String addresses = convertLocation(image.getLocation());
-            imageHolder.location.setText(addresses);
-            imageHolder.imageNameTextView.setText(image.getName());
-            StorageReference ref = FirebaseStorage.getInstance().getReference(image.getPath());
+            try {
+                imageHolder.date.setText(image.getDate());
+                imageHolder.path = image.getPath();
+                imageHolder.pointOnMap = image.getLocation();
+                String addresses = convertLocation(image.getLocation());
+                imageHolder.location.setText(addresses);
+                imageHolder.imageNameTextView.setText(image.getName());
+                StorageReference ref = FirebaseStorage.getInstance().getReference(image.getPath());
 
-            ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                @Override
-                public void onSuccess(Uri uri) {
-                    try {
-                        Glide.with(getContext()).load(uri).into(imageHolder.imageView);
+                ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        try {
+                            Glide.with(getContext()).load(uri).into(imageHolder.imageView);
+                        } catch (NullPointerException ex) {
+                            Log.d("downloading_url", "There is exception in downloading url! " + ex.getStackTrace());
+                        }
                     }
-                    catch (NullPointerException ex){
-                        Log.d("downloading_url","There is exception in downloading url! " + ex.getStackTrace());
-                    }
-                }
-            });
-
+                });
+            }
+            catch (IllegalArgumentException ex){
+                Log.d("bind_view_holder", "IllegalArgumentException in binding item");
+                // delete image if exist in database
+            }
         }
 
         public void deleteItem(int position){
-            getSnapshots().getSnapshot(position).getReference().delete();
+            getSnapshots().getSnapshot(position)
+                    .getReference()
+                    .delete()
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(getContext(),"Item deleted!",Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(getContext(),"Deleting item failed!",Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
         }
 
     }

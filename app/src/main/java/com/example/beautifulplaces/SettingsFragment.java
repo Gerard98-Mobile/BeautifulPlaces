@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -27,6 +28,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SettingsFragment extends Fragment {
 
@@ -38,27 +40,22 @@ public class SettingsFragment extends Fragment {
 
 
     private ImageView imageView;
-    private TextView name, email, id;
+    private TextView name, email;
     private Button signOut;
 
-    private GoogleSignInClient mGoogleSignInClient;
-
+    private FirebaseUser user;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_settings, container, false);
 
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
+        this.user = UserData.getUser();
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this.getContext(), gso);
 
-        imageView = v.findViewById(R.id.imageView);
+        imageView = v.findViewById(R.id.profile_image);
         name = v.findViewById(R.id.textName);
         email = v.findViewById(R.id.textEmail);
-        id = v.findViewById(R.id.textID);
         signOut = v.findViewById(R.id.signOut);
         signOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,19 +70,18 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this.getContext());
-        if (acct != null) {
-            String personName = acct.getDisplayName();
-            String personEmail = acct.getEmail();
-            String personId = acct.getId();
-            Uri personPhoto = acct.getPhotoUrl();
+
+        if(user != null){
+            String personName = user.getDisplayName();
+            String personEmail = user.getEmail();
+            Uri personPhoto = user.getPhotoUrl();
 
             imageView.setImageURI(personPhoto);
             name.setText(personName);
             email.setText(personEmail);
-            id.setText(personId);
 
             Glide.with(this).load(String.valueOf(personPhoto)).into(imageView);
+
 
         }
 
@@ -96,6 +92,7 @@ public class SettingsFragment extends Fragment {
     }
 
     private void signOut() {
+
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(this.getActivity().getApplicationContext(),LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

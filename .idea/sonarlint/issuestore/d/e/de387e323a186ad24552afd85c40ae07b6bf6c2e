@@ -1,15 +1,18 @@
 
-msquid:UselessImportCheck"=Remove this unused import 'com.firebase.ui.auth.IdpResponse'.(†¶Ùøÿÿÿÿ8ÄÊ­Ëê-
-Ksquid:S1604r"(Make this anonymous inner class a lambda(¥íîŸÿÿÿÿÿ8Ğš ë-
-_squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8ü òë-
+msquid:UselessImportCheck"=Remove this unused import 'com.firebase.ui.auth.IdpResponse'.(†¶Ùøÿÿÿÿ8ÄÊ­Ëê-
+?squid:S1170+"!Make this final field static too.(¬“”‘8äªÛ£ì-
+hsquid:CallToDeprecatedMethodH":Remove this use of "setReadPermissions"; it is deprecated.(·Ù¼y8¯ñ±¹ì-
+lsquid:S1192M"ODefine a constant instead of duplicating this literal "facebook_login" 6 times.(ºÒ8œãç£ì-
 bsquid:UselessImportCheck
 "2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ü òë-
-isquid:S13017"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8ûĞ®Ëê-
-isquid:CommentedOutCodeLineM"<This block of commented-out lines of code should be removed.(å†ò˜8Ş§°Ëê-
-lsquid:S1192n"NDefine a constant instead of duplicating this literal "google_log_in" 3 times.(…²ª 8ûĞ®Ëê-
-qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(·¡ïõøÿÿÿÿ8ûĞ®Ëê-
-ssquid:S1450#"URemove the "singIn" field and declare it as a local variable in the relevant methods.(ıÒ®í8Ù‚èÙè-
-W"squid:SwitchLastCaseIsDefaultCheck7""Add a default case to this switch.(ºÖ8ûĞ®Ëê-
-Dsquid:S1170!"!Make this final field static too.(»Éõåüÿÿÿÿ8ûĞ®Ëê-
-€squid:S00116!"\Rename this field "RC_SIGN_IN_GOOGLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Éõåüÿÿÿÿ8ûĞ®Ëê-
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8Óò˜”ì-
+isquid:S1301d"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8Ø‚Ş£ì-
+msquid:S1192œ"NDefine a constant instead of duplicating this literal "google_log_in" 3 times.(…²ª 8ûĞ®Ëê-
+Lsquid:S1604 "(Make this anonymous inner class a lambda(¥íîŸÿÿÿÿÿ8Ğš ë-
+Lsquid:S1604¾"(Make this anonymous inner class a lambda(¥íîŸÿÿÿÿÿ8â–ì£ì-
+Dsquid:S1170*"!Make this final field static too.(»Éõåüÿÿÿÿ8ûĞ®Ëê-
+_squid:UselessImportCheck"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8ü òë-
+€squid:S00116*"\Rename this field "RC_SIGN_IN_GOOGLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Éõåüÿÿÿÿ8ûĞ®Ëê-
+}squid:S00116+"^Rename this field "RC_SIGN_IN_FACEBOOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬“”‘8äªÛ£ì-
+W"squid:SwitchLastCaseIsDefaultCheckd""Add a default case to this switch.(ºÖ8Ø‚Ş£ì-
+isquid:CommentedOutCodeLinex"<This block of commented-out lines of code should be removed.(å†ò˜8Ş§°Ëê-
+qsquid:MaximumInheritanceDepth("<This class has 6 parents which is greater than 5 authorized.(·¡ïõøÿÿÿÿ8ûĞ®Ëê-

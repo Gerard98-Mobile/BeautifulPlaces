@@ -1,19 +1,19 @@
 
-isquid:UselessImportCheck">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8Ä÷ßâê-
-tsquid:S1450)"QRemove the "id" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
-ssquid:S1450*"VRemove the "signOut" field and declare it as a local variable in the relevant methods.(şèK8Ä÷ßâê-
-asquid:UselessImportCheck"6Remove this unused import 'android.view.MenuInflater'.(¥ñ´Ò8ı’§“ì-
-|squid:UselessImportCheck"LRemove this unused import 'com.google.android.gms.tasks.OnCompleteListener'.(Çğ¸Òÿÿÿÿÿ8Ä÷ßâê-
-W"squid:SwitchLastCaseIsDefaultCheckB""Add a default case to this switch.(ºÖ8Ä÷ßâê-
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8Ä÷ßâê-
-isquid:S1301B"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8Ä÷ßâê-
 Fsquid:S1659)"#Declare "email" on a separate line.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
-esquid:UselessImportCheck	"5Remove this unused import 'android.view.MotionEvent'.(˜šËŞúÿÿÿÿ8ø–í¾ë-
-Csquid:S1659)" Declare "id" on a separate line.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
-vsquid:S1450)"SRemove the "name" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
-wsquid:S1450)"TRemove the "email" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
-vsquid:S1450("XRemove the "imageView" field and declare it as a local variable in the relevant methods.(øû¯8Ä÷ßâê-
-Ysquid:UselessImportCheck".Remove this unused import 'android.view.Menu'.(£¯Ò…8ı’§“ì-
-ysquid:UselessImportCheck"NRemove this unused import 'com.google.android.gms.common.api.GoogleApiClient'.(¹¾êŒ8µœŞéê-
-…squid:S1450,"bRemove the "mGoogleSignInClient" field and declare it as a local variable in the relevant methods.(äáºêûÿÿÿÿ8ë†Şéê-
 Zsquid:S1068,"7Remove this unused "mGoogleSignInClient" private field.(äáºêûÿÿÿÿ8ë†Şéê-
+Csquid:S1659)" Declare "id" on a separate line.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
+tsquid:S1450)"QRemove the "id" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
+…squid:S1450,"bRemove the "mGoogleSignInClient" field and declare it as a local variable in the relevant methods.(äáºêûÿÿÿÿ8ë†Şéê-
+wsquid:S1450)"TRemove the "email" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
+asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8Ä÷ßâê-
+vsquid:S1450)"SRemove the "name" field and declare it as a local variable in the relevant methods.(¦Ùáïûÿÿÿÿ8Ä÷ßâê-
+ysquid:UselessImportCheck"NRemove this unused import 'com.google.android.gms.common.api.GoogleApiClient'.(¹¾êŒ8µœŞéê-
+isquid:S1301B"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8Ä÷ßâê-
+ssquid:S1450*"VRemove the "signOut" field and declare it as a local variable in the relevant methods.(şèK8Ä÷ßâê-
+|squid:UselessImportCheck"LRemove this unused import 'com.google.android.gms.tasks.OnCompleteListener'.(Çğ¸Òÿÿÿÿÿ8Ä÷ßâê-
+Ysquid:UselessImportCheck".Remove this unused import 'android.view.Menu'.(£¯Ò…8ı’§“ì-
+esquid:UselessImportCheck	"5Remove this unused import 'android.view.MotionEvent'.(˜šËŞúÿÿÿÿ8ø–í¾ë-
+isquid:UselessImportCheck">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8Ä÷ßâê-
+vsquid:S1450("XRemove the "imageView" field and declare it as a local variable in the relevant methods.(øû¯8Ä÷ßâê-
+W"squid:SwitchLastCaseIsDefaultCheckB""Add a default case to this switch.(ºÖ8Ä÷ßâê-
+asquid:UselessImportCheck"6Remove this unused import 'android.view.MenuInflater'.(¥ñ´Ò8ı’§“ì-

@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
@@ -111,9 +112,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             }
         });
 
-        //images = ImageStorage.getInstance().getImages();
-
-
         if(cameraPosition != null) {
             mMap.moveCamera(CameraUpdateFactory.zoomTo(6.0f));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(cameraPosition));
@@ -122,9 +120,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     public void setMarkers(){
 
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this.getContext());
-        if (acct != null) {
-            userID = acct.getId();
+        FirebaseUser user = UserData.getUser();
+        if (user != null) {
+            userID = user.getUid();
         }
 
         pointsOnTheMap.clear();

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">BeautifulPlaces</string>
+    <string name="facebook_application_id" translatable="false">2870844876279810</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb2870844876279810</string>
+
     <string name="confirm">Confirm</string>
     <string name="eMail">E-Mail</string>
     <string name="logIn">Log In</string>

@@ -46,6 +46,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -53,6 +54,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.GeoPoint;
 import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
@@ -89,9 +91,9 @@ public class CameraFragment extends Fragment{
     private LocationRequest locationRequest;
     private LocationSettingsRequest locationSettingsRequest;
 
-    private FusedLocationProviderClient fusedLocationClient;
 
-    BottomNavigationView bottomNavigationView;
+
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState)
@@ -249,13 +251,25 @@ public class CameraFragment extends Fragment{
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, etc.
                     // ...
                     uploadImageInformationToFireStore();
+                    Toast.makeText(context, "Image uploaded!", Toast.LENGTH_SHORT).show();
                     Log.d("upload_file", "File uploaded successfully");
+                }
+            }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                    Toast.makeText(context, "Uploading your Image...", Toast.LENGTH_SHORT).show();
                 }
             });
             return true;
         }
         else{
             Toast.makeText(getContext(), R.string.location_problem, Toast.LENGTH_SHORT).show();
+            try {
+                mFusedLocationClient.requestLocationUpdates(this.locationRequest,
+                        this.locationCallback, Looper.myLooper());
+            }catch (SecurityException ex){
+                Log.d("location",ex.getMessage());
+            }
             return false;
         }
 
@@ -265,10 +279,10 @@ public class CameraFragment extends Fragment{
 
         mineImage.setActuallyDate();
         mineImage.setName(nameImageEditText.getText().toString());
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(context);
-        if(acct!= null){
-            mineImage.setUserID(acct.getId());
-            ImageStorage.getInstance().insertNewImage(mineImage);
+        FirebaseUser user = UserData.getUser();
+        if(user!= null){
+            mineImage.setUserID(user.getUid());
+            ImageStorage.getInstance().insertNewImage(mineImage, context);
         }
         else{
             Toast.makeText(getContext(), "There is problem with getting data from your account! Uploading image failed! ", Toast.LENGTH_SHORT).show();
