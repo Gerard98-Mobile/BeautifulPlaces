@@ -5,10 +5,6 @@ P
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-p
-@app/src/main/java/com/example/beautifulplaces/LoginActivity.java,d\e\de387e323a186ad24552afd85c40ae07b6bf6c2e
-o
-?app/src/main/java/com/example/beautifulplaces/HomeFragment.java,c\c\cccff480d80e2445a40238235bc0bc525d548e4b
 s
 Capp/src/main/java/com/example/beautifulplaces/SettingsFragment.java,f\9\f9a4b8719264a6c3f920f66f5a9fb719cd850a51
 q
@@ -98,3 +94,15 @@ S
 #app/src/main/res/xml/file_paths.xml,e\7\e7f007fbc01059fd98da2893455aa52c5c160c9b
 S
 #app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+k
+;app/src/main/java/com/example/beautifulplaces/UserData.java,3\3\33be4ebb5b6087be1d4490ceb0f03dead0713580
+|
+Lapp/src/main/java/com/example/beautifulplaces/adapters/ImageListAdapter.java,5\c\5c7b1db2eb9d92155958ad2b317245ede0bffbc9
+„
+Tapp/src/main/java/com/example/beautifulplaces/viewmodels/LoginActivityViewModel.java,a\6\a6d5323d42d131d742966bfe3f0a39830452e9bc
+u
+Eapp/src/main/java/com/example/beautifulplaces/auth/LoginActivity.java,3\2\323d637e9d028be9c57490c7038b7bf721b5bbab
+
+Oapp/src/main/java/com/example/beautifulplaces/repositories/FirebaseStorage.java,f\0\f0d1e262a340062ad8787396296fdda0d2a8a3c6
+…
+Uapp/src/main/java/com/example/beautifulplaces/viewmodels/CameraFragmentViewModel.java,b\e\be7af7eb43810ad379c74b8bfc016693015db480

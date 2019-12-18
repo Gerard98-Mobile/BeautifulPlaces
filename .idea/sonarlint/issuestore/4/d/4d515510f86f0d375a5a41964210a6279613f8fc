@@ -1,9 +1,0 @@
-
-zsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8«·¨µí-
-Lsquid:S1604©"(Make this anonymous inner class a lambda(áåüªúÿÿÿÿ8áÒÄë-
-‚squid:UselessImportCheck"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8«·¨µí-
-usquid:UselessImportCheck"ERemove this unused import 'com.google.android.gms.maps.model.LatLng'.(Ï˜Éıüÿÿÿÿ8ÿ¡·ñë-
-nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(×úùÿÿÿÿ8ÊÈ¼÷ë-
-ƒsquid:S1149Å"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(€à˜°úÿÿÿÿ8×†ğë-
-fsquid:HiddenFieldCheck§"7Rename "ref" which hides the field declared at line 56.(ñƒÌÙùÿÿÿÿ8áÒÄë-
-Dsquid:S3398½"%Move this method into "ImageAdapter".(«¶©ì8÷ûŞ¡ì-

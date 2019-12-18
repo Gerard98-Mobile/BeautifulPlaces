@@ -28,7 +28,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".LoginActivity">
+        <activity android:name=".auth.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,13 +37,13 @@
         </activity>
 
         <activity android:name=".HomeActivity"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".auth.LoginActivity">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value=".auth.LoginActivity" />
         </activity>
-        <activity android:name=".ImageDisplayActivity"
+        <activity android:name=".activities.ImageDisplayActivity"
             android:parentActivityName=".HomeActivity">
 
             <meta-data

@@ -3,43 +3,27 @@ package com.example.beautifulplaces;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.location.LocationManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
-import androidx.core.view.GestureDetectorCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.bumptech.glide.Glide;
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.example.beautifulplaces.activities.ImageDisplayActivity;
+import com.example.beautifulplaces.fragments.CameraFragment;
+import com.example.beautifulplaces.fragments.ImageListFragment;
+import com.example.beautifulplaces.fragments.MapFragment;
+import com.example.beautifulplaces.fragments.SettingsFragment;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.io.File;
-import java.io.IOException;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -64,20 +48,25 @@ public class HomeActivity extends AppCompatActivity {
         getPermissionLocalization();
         bottomNavigationView = findViewById(R.id.navigation);
 
-        Fragment firstFragment = HomeFragment.getInstance();
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame, firstFragment);
-        transaction.commit();
-
-        //ImageStorage.getInstance().initImages();
         try {
-            int particular_fragment = getIntent().getExtras().getInt(KEY_EXTRA_PARTICULAR_FRAGMENT);
-            setNewFragment(particular_fragment);
+            int particularFragment = getIntent().getExtras().getInt(KEY_EXTRA_PARTICULAR_FRAGMENT);
+            MapFragment mapFragment = new MapFragment();
+
+            double latitude = getIntent().getDoubleExtra(ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE, ImageDisplayActivity.DEFAULTVALUE);
+            double longitude = getIntent().getDoubleExtra(ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE, ImageDisplayActivity.DEFAULTVALUE);
+            if(latitude == ImageDisplayActivity.DEFAULTVALUE || longitude == ImageDisplayActivity.DEFAULTVALUE){
+                mapFragment.setCameraPosition(new LatLng(latitude,longitude));
+            }
+            setNewFragment(particularFragment);
             bottomNavigationView.setSelectedItemId(R.id.menu_map);
         }
         catch (NullPointerException ex){
+            Fragment firstFragment = new ImageListFragment();
 
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame, firstFragment);
+            transaction.commit();
+            Log.d("home_activity", "There was no extra particular_fragment");
         }
 
 
@@ -93,10 +82,6 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.menu_camera:
                         if(getPermissionLocalization()){
                             setNewFragment(CAMERA_FRAGMENT);
-                        }
-                        else{
-                            setNewFragment(IMAGE_LIST_FRAGMENT);
-                            bottomNavigationView.setSelectedItemId(R.id.menu_home);
                         }
                         break;
                     case R.id.menu_map:
@@ -114,23 +99,28 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * changing displayed fragment
+     * @param newFragmentIndex
+     */
+
     public void setNewFragment(int newFragmentIndex){
         actuallyFragmentIndex = newFragmentIndex;
         switch (actuallyFragmentIndex){
             case IMAGE_LIST_FRAGMENT:
-                actuallyFragment = ImageListFragment.getInstance();
+                actuallyFragment = new ImageListFragment();
                 break;
             case CAMERA_FRAGMENT:
-                actuallyFragment = CameraFragment.getInstance();
+                actuallyFragment = new CameraFragment();
                 break;
             case MAP_FRAGMENT:
-                actuallyFragment = MapFragment.getInstance();
+                actuallyFragment = new MapFragment();
                 break;
             case SETTINGS_FRAGMENT:
-                actuallyFragment = SettingsFragment.getInstance();
+                actuallyFragment = new SettingsFragment();
                 break;
             default:
-                actuallyFragment = ImageListFragment.getInstance();
+                actuallyFragment = new ImageListFragment();
         }
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -138,10 +128,17 @@ public class HomeActivity extends AppCompatActivity {
         transaction.commit();
     }
 
-    protected void changeSelectedItem(int itemID){
+    public void changeSelectedItem(int itemID){
         bottomNavigationView.setSelectedItemId(itemID);
     }
 
+
+    /**
+     * request localization permission, if denied showing AlertDialog
+     * that user have to accept localization to use CameraFragment
+     *
+     * @return false if user denied accepting permission, else function return true
+     */
 
     public boolean getPermissionLocalization(){
 

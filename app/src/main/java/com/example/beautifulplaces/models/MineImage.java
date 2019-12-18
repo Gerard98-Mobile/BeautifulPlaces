@@ -1,11 +1,9 @@
-package com.example.beautifulplaces;
+package com.example.beautifulplaces.models;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 import com.google.firebase.firestore.GeoPoint;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 

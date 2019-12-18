@@ -1,32 +1,32 @@
 
-bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ú¨Åâê-
-Tsquid:UselessImportCheck)")Remove this unused import 'java.io.File'.(†Ğ¥Å8ú¨Åâê-
-dsquid:UselessImportCheck"9Remove this unused import 'android.view.GestureDetector'.(ò³µ8†ˆ¿ë-
-asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ú¨Åâê-
-\squid:UselessImportCheck	",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8ú¨Åâê-
-esquid:UselessImportCheck"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8ú¨Åâê-
-Ksquid:S1604T"(Make this anonymous inner class a lambda(õßØµüÿÿÿÿ8µğ†¾ë-
-csquid:UselessImportCheck"8Remove this unused import 'android.provider.MediaStore'.(ãçšş8ú¨Åâê-
-‡squid:UselessImportCheck#"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInOptions'.(¢ÉÀÿÿÿÿÿ8ú¨Åâê-
-dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ú¨Åâê-
-`squid:UselessImportCheck*"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ú¨Åâê-
-psquid:S00117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çİ…å8ºÊØğë-
-Msquid:S00108O")Either remove or fill this block of code.(ŒĞ©ìùÿÿÿÿ8ºÊØğë-
-`squid:UselessImportCheck"5Remove this unused import 'com.bumptech.glide.Glide'.(Ñˆ…Ë8ú¨Åâê-
-osquid:UselessImportCheck"?Remove this unused import 'androidx.core.content.FileProvider'.(ïŒø€ûÿÿÿÿ8ú¨Åâê-
-isquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(™»¨®8Ê¹•ì-
-^squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8ú¨Åâê-
-isquid:UselessImportCheck&">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8ú¨Åâê-
-]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8ÀİíŠì-
-usquid:UselessImportCheck"ERemove this unused import 'androidx.core.view.GestureDetectorCompat'.(Ñ„œúÿÿÿÿ8‹„„¿ë-
-squid:UselessImportCheck""VRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInClient'.(ì¡ı8ú¨Åâê-
-|squid:UselessImportCheck%"LRemove this unused import 'com.google.android.gms.tasks.OnCompleteListener'.(Çğ¸Òÿÿÿÿÿ8ú¨Åâê-
-esquid:UselessImportCheck"5Remove this unused import 'android.view.MotionEvent'.(˜šËŞúÿÿÿÿ8ŒÛ‚¿ë-
-W"squid:SwitchLastCaseIsDefaultCheckY""Add a default case to this switch.(¿›İ”8µğ†¾ë-
 hsquid:UselessImportCheck"=Remove this unused import 'android.location.LocationManager'.(Ü©ÎÎ8öıó ë-
-‚squid:UselessImportCheck!"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8ú¨Åâê-
-‡squid:S14508"dRemove the "actuallyFragmentIndex" field and declare it as a local variable in the relevant methods.(º°Ü’üÿÿÿÿ8†ˆ¿ë-
-]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8¾ÅÛ¤ë-
+asquid:UselessImportCheck"1Remove this unused import 'android.widget.Toast'.(©›ïÍúÿÿÿÿ8ú¨Åâê-
+`squid:UselessImportCheck"5Remove this unused import 'com.bumptech.glide.Glide'.(Ñˆ…Ë8ú¨Åâê-
 ysquid:UselessImportCheck$"NRemove this unused import 'com.google.android.gms.common.api.GoogleApiClient'.(¹¾êŒ8ú¨Åâê-
-zsquid:UselessImportCheck "PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8ú¨Åâê-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ú¨Åâê-
+csquid:UselessImportCheck"8Remove this unused import 'android.provider.MediaStore'.(ãçšş8ú¨Åâê-
 lsquid:MaximumInheritanceDepth,"<This class has 6 parents which is greater than 5 authorized.(Æ¼¾Î8ú¨Åâê-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8ú¨Åâê-
+|squid:UselessImportCheck%"LRemove this unused import 'com.google.android.gms.tasks.OnCompleteListener'.(Çğ¸Òÿÿÿÿÿ8ú¨Åâê-
+usquid:UselessImportCheck"ERemove this unused import 'androidx.core.view.GestureDetectorCompat'.(Ñ„œúÿÿÿÿ8‹„„¿ë-
+`squid:UselessImportCheck*"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ú¨Åâê-
+‡squid:UselessImportCheck#"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInOptions'.(¢ÉÀÿÿÿÿÿ8ú¨Åâê-
+squid:UselessImportCheck""VRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInClient'.(ì¡ı8ú¨Åâê-
+esquid:UselessImportCheck"5Remove this unused import 'android.view.MotionEvent'.(˜šËŞúÿÿÿÿ8ŒÛ‚¿ë-
+osquid:UselessImportCheck"?Remove this unused import 'androidx.core.content.FileProvider'.(ïŒø€ûÿÿÿÿ8ú¨Åâê-
+nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(úïææıÿÿÿÿ8¼ìè¯ñ-
+‚squid:UselessImportCheck!"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8ú¨Åâê-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8ÀİíŠì-
+\squid:UselessImportCheck	",Remove this unused import 'android.net.Uri'.(òêû‘ıÿÿÿÿ8ú¨Åâê-
+Tsquid:UselessImportCheck)")Remove this unused import 'java.io.File'.(†Ğ¥Å8ú¨Åâê-
+Msquid:S00108H")Either remove or fill this block of code.(ŒĞ©ìùÿÿÿÿ8ºÊØğë-
+psquid:S00117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çİ…å8ºÊØğë-
+W"squid:SwitchLastCaseIsDefaultCheckR""Add a default case to this switch.(¿›İ”8µğ†¾ë-
+esquid:UselessImportCheck"5Remove this unused import 'android.widget.ImageView'.(ú¯ëàüÿÿÿÿ8ú¨Åâê-
+]squid:UselessImportCheck"-Remove this unused import 'android.util.Log'.(Ô¦Ø²øÿÿÿÿ8¾ÅÛ¤ë-
+‡squid:S14508"dRemove the "actuallyFragmentIndex" field and declare it as a local variable in the relevant methods.(º°Ü’üÿÿÿÿ8†ˆ¿ë-
+Ksquid:S1604M"(Make this anonymous inner class a lambda(õßØµüÿÿÿÿ8µğ†¾ë-
+dsquid:UselessImportCheck"9Remove this unused import 'android.view.GestureDetector'.(ò³µ8†ˆ¿ë-
+zsquid:UselessImportCheck "PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8ú¨Åâê-
+isquid:UselessImportCheck&">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8ú¨Åâê-
+nsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(ùœÈğûÿÿÿÿ8ç­õ°ñ-

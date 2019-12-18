@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/tlo"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".auth.LoginActivity">
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_google_button"

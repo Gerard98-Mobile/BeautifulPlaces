@@ -1,26 +1,26 @@
 
-usquid:UselessImportCheck"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8ß—ìê-
-nsquid:UselessImportCheck"CRemove this unused import 'com.google.firebase.firestore.GeoPoint'.(­É¬‘8»¨“ğê-
-isquid:UselessImportCheck">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8Ä¾“óê-
-Ksquid:S1604Y"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8†û¤öê-
-wsquid:UselessImportCheck"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8ß—ìê-
-usquid:UselessImportCheck"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8ß—ìê-
-Fsquid:S1604T"(Make this anonymous inner class a lambda(’Åı8†û¤öê-
-Zsquid:UselessImportCheck""*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8»¨“ğê-
-xsquid:UselessImportCheck"HRemove this unused import 'com.google.firebase.firestore.QuerySnapshot'.(Ä¡Ş©ıÿÿÿÿ8Ä¾“óê-
 psquid:UselessImportCheck"@Remove this unused import 'com.google.firebase.firestore.Query'.(ß´Ìıÿÿÿÿ8Ä¾“óê-
+zsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8ˆÖÕêê-
 Zsquid:UselessImportCheck"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8àÀÀëê-
-Jsquid:S16026",Remove useless curly braces around statement(‚‹¥«8İÁóê-
-^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8»¨“ğê-
+usquid:UselessImportCheck"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8ß—ìê-
+Msquid:S1068("*Remove this unused "userID" private field.(³ ûÁÿÿÿÿÿ8Ğ¥«ğê-
+ksquid:UselessImportCheck"@Remove this unused import 'com.google.firestore.v1.WriteResult'.( ¢”8û†Êìê-
+qsquid:UselessImportCheck"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8ß—ìê-
+Fsquid:S1604T"(Make this anonymous inner class a lambda(’Åı8†û¤öê-
+Ksquid:S1604C"(Make this anonymous inner class a lambda(ŸÏÒëüÿÿÿÿ8ºıá ë-
+isquid:UselessImportCheck">Remove this unused import 'com.google.android.gms.tasks.Task'.(¦âÏô8Ä¾“óê-
 wsquid:UselessImportCheck"LRemove this unused import 'com.google.firebase.firestore.DocumentReference'.(«Ë8äËØõê-
+usquid:UselessImportCheck"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8ß—ìê-
+Ksquid:S1604Y"(Make this anonymous inner class a lambda(œÁÈÌşÿÿÿÿ8†û¤öê-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8»¨“ğê-
+_squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8·Öé¡ñ-
+wsquid:UselessImportCheck"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8ß—ìê-
+Fsquid:S1604I"(Make this anonymous inner class a lambda(˜ˆ¦Ò8‡·¸µí-
+Jsquid:S16026",Remove useless curly braces around statement(‚‹¥«8İÁóê-
+|squid:UselessImportCheck"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8ß—ìê-
+xsquid:UselessImportCheck"HRemove this unused import 'com.google.firebase.firestore.QuerySnapshot'.(Ä¡Ş©ıÿÿÿÿ8Ä¾“óê-
+Zsquid:UselessImportCheck""*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8»¨“ğê-
+zsquid:UselessImportCheck"ORemove this unused import 'com.google.firebase.firestore.core.FirestoreClient'.(…¬ÈÈ8¹€Ãìê-
 ‚squid:UselessImportCheck	"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8ˆÖÕêê-
 esquid:HiddenFieldCheckR"7Rename "ref" which hides the field declared at line 43.(ÆùÓÏüÿÿÿÿ8†û¤öê-
-Fsquid:S1604I"(Make this anonymous inner class a lambda(˜ˆ¦Ò8‡·¸µí-
-zsquid:UselessImportCheck"ORemove this unused import 'com.google.firebase.firestore.core.FirestoreClient'.(…¬ÈÈ8¹€Ãìê-
-|squid:UselessImportCheck"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8ß—ìê-
-Lsquid:S1172A".Remove this unused method parameter "context".(ìí…®8Ì¾µí-
-Msquid:S1068("*Remove this unused "userID" private field.(³ ûÁÿÿÿÿÿ8Ğ¥«ğê-
-zsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8ˆÖÕêê-
-qsquid:UselessImportCheck"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8ß—ìê-
-ksquid:UselessImportCheck"@Remove this unused import 'com.google.firestore.v1.WriteResult'.( ¢”8û†Êìê-
-Ksquid:S1604C"(Make this anonymous inner class a lambda(ŸÏÒëüÿÿÿÿ8ºıá ë-
+nsquid:UselessImportCheck"CRemove this unused import 'com.google.firebase.firestore.GeoPoint'.(­É¬‘8»¨“ğê-

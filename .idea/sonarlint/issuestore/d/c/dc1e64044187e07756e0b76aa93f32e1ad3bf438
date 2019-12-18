@@ -1,36 +1,15 @@
 
-wsquid:UselessImportCheck3"GRemove this unused import 'com.google.firebase.database.DatabaseError'.(ˆÔµıÿÿÿÿ8”óÖ ë-
-hsquid:UselessImportCheck "=Remove this unused import 'androidx.core.app.ActivityCompat'.(ş¤—²8´òĞÅë-
-Lsquid:S1604"(Make this anonymous inner class a lambda( ú±³úÿÿÿÿ8ö‰ºµí-
-esquid:UselessImportCheck":Remove this unused import 'android.content.ContentValues'.(å’µŞ8¸×¸¿ë-
-usquid:UselessImportCheck5"JRemove this unused import 'com.google.firebase.database.FirebaseDatabase'.(×Ë—8”óÖ ë-
-psquid:UselessImportCheck!"@Remove this unused import 'androidx.core.content.ContextCompat'.(üäÂùÿÿÿÿ8´òĞÅë-
-osquid:CommentedOutCodeLine»"<This block of commented-out lines of code should be removed.(ëèáìúÿÿÿÿ8İ¤¶–ì-
-qsquid:UselessImportCheck2"FRemove this unused import 'com.google.firebase.database.DataSnapshot'.(şÇŒ„8”óÖ ë-
-dsquid:UselessImportCheck"9Remove this unused import 'androidx.annotation.Nullable'.(¾Èêš8ôÁÏ–ì-
-ksquid:UselessImportCheck
-";Remove this unused import 'android.graphics.BitmapFactory'.(âàºÍûÿÿÿÿ8½Ô„Åë-
-^squid:UselessImportCheck	"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8½Ô„Åë-
-‚squid:UselessImportCheck'"WRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignInAccount'.(‘Ï¦â8àí‰ëì-
-hsquid:UselessImportCheck"=Remove this unused import 'android.location.LocationManager'.(Ü©ÎÎ8ğ¶©ùë-
-isquid:UselessImportCheck">Remove this unused import 'android.location.LocationListener'.(æ‡ë 8Ç‡Üøë-
-Zsquid:UselessImportCheckB"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ğöÃìê-
-Fsquid:S1604ø"(Make this anonymous inner class a lambda(‹Ô”H8İ¤¶–ì-
-^squid:UselessImportCheckA".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ğöÃìê-
-|squid:UselessImportCheck6"LRemove this unused import 'com.google.firebase.database.ValueEventListener'.(‹ŞÜ‹ıÿÿÿÿ8”óÖ ë-
-„squid:S1450\"fRemove the "locationSettingsRequest" field and declare it as a local variable in the relevant methods.(°––ı8²‰Öùë-
-Psquid:S1068R"-Remove this unused "imageName" private field.(åµÄ§ıÿÿÿÿ8ıÚÈ¢ì-
-osquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(ğëğÆûÿÿÿÿ8İ¤¶–ì-
-asquid:UselessImportCheck"6Remove this unused import 'android.view.MenuInflater'.(¥ñ´Ò8ôÁÏ–ì-
-Gsquid:S1604ò"(Make this anonymous inner class a lambda(ÎŸÜÜ8İ¤¶–ì-
-]squid:UselessImportCheck"-Remove this unused import 'android.Manifest'.(¦øïúÿÿÿÿ8´òĞÅë-
-zsquid:UselessImportCheck&"PRemove this unused import 'com.google.android.gms.auth.api.signin.GoogleSignIn'.(‹é±e8àí‰ëì-
-vsquid:UselessImportCheck$"FRemove this unused import 'androidx.fragment.app.FragmentTransaction'.(¦İÚ¿şÿÿÿÿ8„«ö–ì-
-Ysquid:UselessImportCheck".Remove this unused import 'android.view.Menu'.(£¯Ò…8ôÁÏ–ì-
-Vsquid:S1068`"8Remove this unused "bottomNavigationView" private field.(ê¥ÎÚ8àí‰ëì-
-‚squid:S1450O"_Remove the "currentPhotoPath" field and declare it as a local variable in the relevant methods.(€Óêüşÿÿÿÿ8ÉóĞøë-
-usquid:UselessImportCheck4"KRemove this unused import 'com.google.firebase.database.DatabaseReference'.(ÉÓ¹8”óÖ ë-
-Wsquid:S1068O"4Remove this unused "currentPhotoPath" private field.(€Óêüşÿÿÿÿ8ÉóĞøë-
-squid:S1450`"cRemove the "bottomNavigationView" field and declare it as a local variable in the relevant methods.(ê¥ÎÚ8àí‰ëì-
-Ysquid:S1068\";Remove this unused "locationSettingsRequest" private field.(°––ı8ÒÌÑøë-
-{squid:S1450R"XRemove the "imageName" field and declare it as a local variable in the relevant methods.(åµÄ§ıÿÿÿÿ8ıÚÈ¢ì-
+Ysquid:S1068D";Remove this unused "locationSettingsRequest" private field.(°––ı8˜Ïª¢ñ-
+jsquid:S1192k"LDefine a constant instead of duplicating this literal "upload_file" 3 times.(”ÜÀò8˜Ïª¢ñ-
+Psquid:S1068:"-Remove this unused "imageName" private field.(åµÄ§ıÿÿÿÿ8’†¬¢ñ-
+Jsquid:S1068.",Remove this unused "FILENAME" private field.(Å‚³æ8‹½Õ†ñ-
+Wsquid:S10687"4Remove this unused "currentPhotoPath" private field.(€Óêüşÿÿÿÿ8˜Ïª¢ñ-
+Esquid:S1604g"(Make this anonymous inner class a lambda(ş¨˜8˜Ïª¢ñ-
+Ksquid:S1068;"-Remove this unused "mineImage" private field.(„òşú8œ‡Ï°ñ-
+‚squid:S14507"_Remove the "currentPhotoPath" field and declare it as a local variable in the relevant methods.(€Óêüşÿÿÿÿ8œ·¦°ñ-
+Ksquid:S1604p"(Make this anonymous inner class a lambda(½ûİÊúÿÿÿÿ8˜Ïª¢ñ-
+Fsquid:S1604z"(Make this anonymous inner class a lambda(€¢ÛÏ8˜Ïª¢ñ-
+{squid:S1450:"XRemove the "imageName" field and declare it as a local variable in the relevant methods.(åµÄ§ıÿÿÿÿ8œ·¦°ñ-
+csquid:S3252ó"DUse static access with "java.text.DateFormat" for "getDateInstance".(Çò8¨ûí°ñ-
+vsquid:S1450;"XRemove the "mineImage" field and declare it as a local variable in the relevant methods.(„òşú8Ù¹´°ñ-
+„squid:S1450D"fRemove the "locationSettingsRequest" field and declare it as a local variable in the relevant methods.(°––ı8˜Ïª¢ñ-
