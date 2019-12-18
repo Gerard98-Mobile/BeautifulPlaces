@@ -62,7 +62,6 @@ public class LoginActivity extends AppCompatActivity {
         createGoogleSignIn();
         createFacebookLogIn();
 
-
     }
 
     private void createFacebookLogIn() {
@@ -172,7 +171,6 @@ public class LoginActivity extends AppCompatActivity {
                             updateUI(null);
                         }
 
-                        // ...
                     }
                 });
     }

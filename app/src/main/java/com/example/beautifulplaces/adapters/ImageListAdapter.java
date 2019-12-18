@@ -111,9 +111,7 @@ public class ImageListAdapter  extends FirestoreRecyclerAdapter<MineImage, Image
             }
             else{
                 StringBuffer address = new StringBuffer("");
-                if(addresses.get(0).getFeatureName() != null){
-                    address.append(addresses.get(0).getFeatureName() + "\n");
-                }
+
                 if(addresses.get(0).getLocality() != null){
                     address.append(addresses.get(0).getLocality() + "\n");
                 }
