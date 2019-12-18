@@ -8,7 +8,7 @@ User have to sign up, he can do that using google account or facebook account.<b
 <br/><br/>
 Every photo have saved localization where were taken.
 User can see markers on map, where photos was taken. ( Yellow marker - user photo , Red marker - other user photo ) 
-He can see image by clicking on marker.<br/><br/>
+He can see photo by clicking on marker.<br/><br/>
 ![map](https://user-images.githubusercontent.com/59020684/71093139-e2b5a980-21a8-11ea-864f-752f77a05b88.PNG)<br/>
 
 ( Android, Java, Firebase, Google Map )
