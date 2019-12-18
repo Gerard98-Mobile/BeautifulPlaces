@@ -30,7 +30,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.List;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
@@ -52,7 +51,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         }
     };
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -70,6 +68,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         viewModel = ViewModelProvider.AndroidViewModelFactory
                 .getInstance(getActivity().getApplication())
                 .create(MapFragmentViewModel.class);
+
+        viewModel.setCameraPosition(this.getArguments());
 
         viewModel.getActuallyMarker().observe(getViewLifecycleOwner(),mineMarkerObserver);
 
@@ -107,7 +107,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         });
 
         if(viewModel.getCameraPosition() != null) {
-            mMap.moveCamera(CameraUpdateFactory.zoomTo(6.0f));
+            mMap.moveCamera(CameraUpdateFactory.zoomTo(10.0f));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(viewModel.getCameraPosition()));
         }
     }

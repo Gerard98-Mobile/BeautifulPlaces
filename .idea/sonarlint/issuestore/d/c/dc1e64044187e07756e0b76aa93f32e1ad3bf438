@@ -1,15 +1,0 @@
-
-Ysquid:S1068D";Remove this unused "locationSettingsRequest" private field.(°––ı8˜Ïª¢ñ-
-jsquid:S1192k"LDefine a constant instead of duplicating this literal "upload_file" 3 times.(”ÜÀò8˜Ïª¢ñ-
-Psquid:S1068:"-Remove this unused "imageName" private field.(åµÄ§ıÿÿÿÿ8’†¬¢ñ-
-Jsquid:S1068.",Remove this unused "FILENAME" private field.(Å‚³æ8‹½Õ†ñ-
-Wsquid:S10687"4Remove this unused "currentPhotoPath" private field.(€Óêüşÿÿÿÿ8˜Ïª¢ñ-
-Esquid:S1604g"(Make this anonymous inner class a lambda(ş¨˜8˜Ïª¢ñ-
-Ksquid:S1068;"-Remove this unused "mineImage" private field.(„òşú8œ‡Ï°ñ-
-‚squid:S14507"_Remove the "currentPhotoPath" field and declare it as a local variable in the relevant methods.(€Óêüşÿÿÿÿ8œ·¦°ñ-
-Ksquid:S1604p"(Make this anonymous inner class a lambda(½ûİÊúÿÿÿÿ8˜Ïª¢ñ-
-Fsquid:S1604z"(Make this anonymous inner class a lambda(€¢ÛÏ8˜Ïª¢ñ-
-{squid:S1450:"XRemove the "imageName" field and declare it as a local variable in the relevant methods.(åµÄ§ıÿÿÿÿ8œ·¦°ñ-
-csquid:S3252ó"DUse static access with "java.text.DateFormat" for "getDateInstance".(Çò8¨ûí°ñ-
-vsquid:S1450;"XRemove the "mineImage" field and declare it as a local variable in the relevant methods.(„òşú8Ù¹´°ñ-
-„squid:S1450D"fRemove the "locationSettingsRequest" field and declare it as a local variable in the relevant methods.(°––ı8˜Ïª¢ñ-

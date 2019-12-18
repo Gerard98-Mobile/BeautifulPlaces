@@ -65,6 +65,11 @@ public class ImageListAdapter  extends FirestoreRecyclerAdapter<MineImage, Image
                         Log.d("downloading_url", "There is exception in downloading url! " + ex.getStackTrace());
                     }
                 }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Glide.with(mContext).load(R.mipmap.ic_image).into(holder.imageView);
+                }
             });
         }
         catch (IllegalArgumentException ex){

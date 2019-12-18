@@ -1,5 +1,7 @@
 package com.example.beautifulplaces.viewmodels;
 
+import android.os.Bundle;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -19,6 +21,9 @@ import com.google.firebase.firestore.GeoPoint;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+
+import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE;
+import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE;
 
 
 public class MapFragmentViewModel extends ViewModel {
@@ -99,6 +104,14 @@ public class MapFragmentViewModel extends ViewModel {
 
     public void setCameraPosition(LatLng pointOnMap){
         cameraPosition = pointOnMap;
+    }
+
+    public void setCameraPosition(Bundle bundle){
+        if(bundle != null){
+            double latitude = bundle.getDouble(KEY_EXTRA_IMAGE_LATITUDE);
+            double longitude = bundle.getDouble(KEY_EXTRA_IMAGE_LONGITUDE);
+            setCameraPosition(new LatLng(latitude,longitude));
+        }
     }
 
 }

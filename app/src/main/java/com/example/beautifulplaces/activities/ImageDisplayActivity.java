@@ -77,6 +77,9 @@ public class ImageDisplayActivity extends AppCompatActivity {
             if(uri != null) {
                 Glide.with(getBaseContext()).load(uri).into(imageView);
             }
+            else{
+                Glide.with(getBaseContext()).load(R.mipmap.ic_image).into(imageView);
+            }
         }
     };
 

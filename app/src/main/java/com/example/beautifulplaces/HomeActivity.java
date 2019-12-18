@@ -24,6 +24,9 @@ import com.example.beautifulplaces.fragments.SettingsFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE;
+import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE;
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -50,15 +53,24 @@ public class HomeActivity extends AppCompatActivity {
 
         try {
             int particularFragment = getIntent().getExtras().getInt(KEY_EXTRA_PARTICULAR_FRAGMENT);
-            MapFragment mapFragment = new MapFragment();
 
-            double latitude = getIntent().getDoubleExtra(ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE, ImageDisplayActivity.DEFAULTVALUE);
+
+            double latitude = getIntent().getDoubleExtra(KEY_EXTRA_IMAGE_LATITUDE, ImageDisplayActivity.DEFAULTVALUE);
             double longitude = getIntent().getDoubleExtra(ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE, ImageDisplayActivity.DEFAULTVALUE);
-            if(latitude == ImageDisplayActivity.DEFAULTVALUE || longitude == ImageDisplayActivity.DEFAULTVALUE){
-                mapFragment.setCameraPosition(new LatLng(latitude,longitude));
+            if(latitude != ImageDisplayActivity.DEFAULTVALUE && longitude != ImageDisplayActivity.DEFAULTVALUE){
+                Bundle bundle = new Bundle();
+                bundle.putDouble(KEY_EXTRA_IMAGE_LATITUDE, latitude);
+                bundle.putDouble(KEY_EXTRA_IMAGE_LONGITUDE, longitude);
+
+                MapFragment mapFragment = new MapFragment();
+                mapFragment.setArguments(bundle);
+
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame, mapFragment);
+                transaction.commit();
+                bottomNavigationView.setSelectedItemId(R.id.menu_map);
+
             }
-            setNewFragment(particularFragment);
-            bottomNavigationView.setSelectedItemId(R.id.menu_map);
         }
         catch (NullPointerException ex){
             Fragment firstFragment = new ImageListFragment();
@@ -99,6 +111,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+
     /**
      * changing displayed fragment
      * @param newFragmentIndex
@@ -127,6 +140,7 @@ public class HomeActivity extends AppCompatActivity {
         transaction.replace(R.id.frame, actuallyFragment);
         transaction.commit();
     }
+
 
     public void changeSelectedItem(int itemID){
         bottomNavigationView.setSelectedItemId(itemID);
