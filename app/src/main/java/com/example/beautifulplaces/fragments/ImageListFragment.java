@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.beautifulplaces.HomeActivity;
 import com.example.beautifulplaces.models.MineImage;
 import com.example.beautifulplaces.R;
 import com.example.beautifulplaces.repositories.UserData;
@@ -68,5 +69,11 @@ public class ImageListFragment extends Fragment {
     public void onStop() {
         super.onStop();
         adapter.stopListening();
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(HomeActivity.KEY_EXTRA_FRAGMENT_INDEX, HomeActivity.IMAGE_LIST_FRAGMENT);
     }
 }

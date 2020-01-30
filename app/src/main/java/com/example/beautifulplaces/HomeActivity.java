@@ -24,6 +24,7 @@ import com.example.beautifulplaces.fragments.SettingsFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_BUNDLE_IMAGE;
 import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE;
 import static com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE;
 
@@ -35,8 +36,8 @@ public class HomeActivity extends AppCompatActivity {
     public static final int MAP_FRAGMENT = 3;
     public static final int SETTINGS_FRAGMENT = 4;
 
-    public static final String KEY_EXTRA_PARTICULAR_FRAGMENT = "key_extra_particular_fragment";
     public static final int MY_PERMISSIONS_ACCESS_FINE_LOCATION = 1;
+    public static final String KEY_EXTRA_FRAGMENT_INDEX = "key_extra_fragment_index";
 
 
     private Fragment actuallyFragment;
@@ -50,35 +51,26 @@ public class HomeActivity extends AppCompatActivity {
 
         getPermissionLocalization();
         bottomNavigationView = findViewById(R.id.navigation);
-
-        try {
-            int particularFragment = getIntent().getExtras().getInt(KEY_EXTRA_PARTICULAR_FRAGMENT);
-
-
-            double latitude = getIntent().getDoubleExtra(KEY_EXTRA_IMAGE_LATITUDE, ImageDisplayActivity.DEFAULTVALUE);
-            double longitude = getIntent().getDoubleExtra(ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE, ImageDisplayActivity.DEFAULTVALUE);
-            if(latitude != ImageDisplayActivity.DEFAULTVALUE && longitude != ImageDisplayActivity.DEFAULTVALUE){
-                Bundle bundle = new Bundle();
-                bundle.putDouble(KEY_EXTRA_IMAGE_LATITUDE, latitude);
-                bundle.putDouble(KEY_EXTRA_IMAGE_LONGITUDE, longitude);
-
+        try{
+            Bundle bundle = savedInstanceState.getBundle(KEY_EXTRA_FRAGMENT_INDEX);
+        }
+        catch (NullPointerException ex){
+            Bundle imageExtra = getIntent().getBundleExtra(KEY_EXTRA_BUNDLE_IMAGE);
+            if (imageExtra != null) {
                 MapFragment mapFragment = new MapFragment();
-                mapFragment.setArguments(bundle);
+                mapFragment.setArguments(imageExtra);
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame, mapFragment);
                 transaction.commit();
                 bottomNavigationView.setSelectedItemId(R.id.menu_map);
-
+            }else{
+                Fragment firstFragment = new ImageListFragment();
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frame, firstFragment);
+                transaction.commit();
+                Log.d("home_activity", "There was no extra particular_fragment");
             }
-        }
-        catch (NullPointerException ex){
-            Fragment firstFragment = new ImageListFragment();
-
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.frame, firstFragment);
-            transaction.commit();
-            Log.d("home_activity", "There was no extra particular_fragment");
         }
 
 

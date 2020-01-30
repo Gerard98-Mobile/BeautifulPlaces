@@ -1,7 +1,13 @@
 
-W"squid:SwitchLastCaseIsDefaultCheckN""Add a default case to this switch.(¿›Ý”8µð†¾ë-
-Ksquid:S1604I"(Make this anonymous inner class a lambda(õßØµüÿÿÿÿ8µð†¾ë-
+lsquid:MaximumInheritanceDepth "<This class has 6 parents which is greater than 5 authorized.(Æ¼¾Î8ú¨Åâê-
+W"squid:SwitchLastCaseIsDefaultCheckR""Add a default case to this switch.(¿›Ý”8ÉùÂÿ-
+Ksquid:S1604M"(Make this anonymous inner class a lambda(õßØµüÿÿÿÿ8ÉùÂÿ-
+¡squid:UselessImportCheck"qRemove this unused import 'com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LATITUDE'.(Ä‚¸ úÿÿÿÿ8ö§Îÿ-
+‡squid:S1450,"dRemove the "actuallyFragmentIndex" field and declare it as a local variable in the relevant methods.(º°Ü’üÿÿÿÿ8˜¿§ÿ-
+¢squid:UselessImportCheck"rRemove this unused import 'com.example.beautifulplaces.activities.ImageDisplayActivity.KEY_EXTRA_IMAGE_LONGITUDE'.(éÏ˜ùÿÿÿÿ8ö§Îÿ-
+ˆsquid:UselessImportCheck"XRemove this unused import 'com.example.beautifulplaces.activities.ImageDisplayActivity'.(åèžˆûÿÿÿÿ8›Í¿ìñ-
+]squid:S18547":Remove this useless assignment to local variable "bundle".(†åž•ùÿÿÿÿ8‹ÙËÿ-
 ^squid:UselessImportCheck
 ".Remove this unused import 'android.view.View'.(Ø½­äþÿÿÿÿ8Ã®ŸÃñ-
-‡squid:S1450("dRemove the "actuallyFragmentIndex" field and declare it as a local variable in the relevant methods.(º°Ü’üÿÿÿÿ8†ˆ¿ë-
-lsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Æ¼¾Î8ú¨Åâê-
+Nsquid:S14817"+Remove this unused "bundle" local variable.(†åž•ùÿÿÿÿ8‹ÙËÿ-
+usquid:UselessImportCheck"ERemove this unused import 'com.google.android.gms.maps.model.LatLng'.(Ï˜Éýüÿÿÿÿ8…žÅÕñ-

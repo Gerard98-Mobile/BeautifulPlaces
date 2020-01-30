@@ -84,9 +84,7 @@ public class ImageListAdapter  extends FirestoreRecyclerAdapter<MineImage, Image
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.fragment_image, parent, false);
 
-        ImageHolder holder = new ImageHolder(view);
-
-        return holder;
+        return new ImageHolder(view);
     }
 
     public void deleteItem(int position){

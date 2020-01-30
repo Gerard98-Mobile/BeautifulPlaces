@@ -12,10 +12,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.beautifulplaces.HomeActivity;
 import com.example.beautifulplaces.activities.ImageDisplayActivity;
 import com.example.beautifulplaces.models.MineMarker;
 import com.example.beautifulplaces.repositories.ImageStorage;
@@ -70,10 +70,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 .create(MapFragmentViewModel.class);
 
         viewModel.setCameraPosition(this.getArguments());
-
         viewModel.getActuallyMarker().observe(getViewLifecycleOwner(),mineMarkerObserver);
-
-        viewModel.loadImages();
+        viewModel.loadMarkers();
 
         return v;
     }
@@ -112,8 +110,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         }
     }
 
+
+
     public void setCameraPosition(LatLng pointOnMap){
         viewModel.setCameraPosition(pointOnMap);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(HomeActivity.KEY_EXTRA_FRAGMENT_INDEX, HomeActivity.MAP_FRAGMENT);
     }
 
 }

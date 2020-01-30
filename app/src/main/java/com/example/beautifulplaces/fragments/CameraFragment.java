@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresPermission;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
@@ -222,6 +223,12 @@ public class CameraFragment extends Fragment{
     public void onStop() {
         super.onStop();
         this.mFusedLocationClient.removeLocationUpdates(this.locationCallback);
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(HomeActivity.KEY_EXTRA_FRAGMENT_INDEX, HomeActivity.CAMERA_FRAGMENT);
     }
 
 

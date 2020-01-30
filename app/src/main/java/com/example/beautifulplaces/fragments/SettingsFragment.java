@@ -17,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.bumptech.glide.Glide;
+import com.example.beautifulplaces.HomeActivity;
 import com.example.beautifulplaces.R;
 import com.example.beautifulplaces.repositories.UserData;
 import com.example.beautifulplaces.auth.LoginActivity;
@@ -91,6 +92,10 @@ public class SettingsFragment extends Fragment {
 
     }
 
-
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(HomeActivity.KEY_EXTRA_FRAGMENT_INDEX, HomeActivity.SETTINGS_FRAGMENT);
+    }
 }
 

@@ -23,6 +23,7 @@ public class ImageDisplayActivity extends AppCompatActivity {
     public static final String KEY_EXTRA_IMAGE_PATH = "key_extra_image_path";
     public static final String KEY_EXTRA_IMAGE_LATITUDE = "key_extra_image_latitude";
     public static final String KEY_EXTRA_IMAGE_LONGITUDE = "key_extra_image_longitude";
+    public static final String KEY_EXTRA_BUNDLE_IMAGE = "key_extra_bundle_image";
 
     public static final double DEFAULTVALUE = 999;
 
@@ -56,9 +57,10 @@ public class ImageDisplayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ImageDisplayActivity.this, HomeActivity.class);
-                intent.putExtra(HomeActivity.KEY_EXTRA_PARTICULAR_FRAGMENT, HomeActivity.MAP_FRAGMENT);
-                intent.putExtra(KEY_EXTRA_IMAGE_LATITUDE, latitude);
-                intent.putExtra(KEY_EXTRA_IMAGE_LONGITUDE, longitude);
+                Bundle bundle = new Bundle();
+                bundle.putDouble(KEY_EXTRA_IMAGE_LATITUDE, latitude);
+                bundle.putDouble(KEY_EXTRA_IMAGE_LONGITUDE, longitude);
+                intent.putExtra(KEY_EXTRA_BUNDLE_IMAGE, bundle);
                 startActivity(intent);
 
             }

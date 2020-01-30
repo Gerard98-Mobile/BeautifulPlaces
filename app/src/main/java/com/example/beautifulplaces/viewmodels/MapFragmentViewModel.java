@@ -50,7 +50,7 @@ public class MapFragmentViewModel extends ViewModel {
     private String userID;
 
 
-    public void loadImages(){
+    public void loadMarkers(){
         ref.get().addOnSuccessListener(m -> {
             images = m.toObjects(MineImage.class);
             setMarkers();
@@ -113,5 +113,7 @@ public class MapFragmentViewModel extends ViewModel {
             setCameraPosition(new LatLng(latitude,longitude));
         }
     }
+
+
 
 }
